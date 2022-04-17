@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
 *{
     margin: 0;
@@ -8,23 +8,171 @@
 
 .container{
     display: flex;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 aside{
     background-color: black;
     width: 200px;
-    height: calc(100vh - 70px);
+    max-height: calc(100vh - 70px);
+    color: #696969;
+    font-size: 13px;
+    font-weight: 700;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+aside>img{
+    max-width: 60%;
+    margin: 15px 18px 20px;
+}
+
+aside>a{
+    display: block;
+    height: 30px;
+    text-decoration: none;
+    color: #696969;
+    margin-bottom: 5px;
+}
+
+aside>.home{
+    border-left: 3px solid #adff2f;
+    color: white;
+}
+
+aside>a img{
+    max-height: 100%;
+    padding: 3px 0;
+    margin-left: 15px;
+    filter: brightness(60%);
+}
+
+aside>a span{
+    line-height: 30px;
+    vertical-align: top;
+}
+
+aside>a:hover img{
+    filter: brightness(100%);
+}
+
+aside>a:hover span{
+    color: white;
+}
+
+aside>h4{
+    color: white;
+    margin-left: 18px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+aside>.createPlaylist{
+    height: 35px;
+    margin-bottom: 15px;
+}
+
+aside a>.add{
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    background-color: white;
+    filter: brightness(60%);
+    margin-left: 18px;
+    margin-right: 5px;
+}
+
+aside>a .add>span{
+    line-height: 35px;
+    vertical-align: middle;
+    color: black;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+aside>.createPlaylist:hover div{
+    filter: brightness(100%);
+}
+
+aside>.playlistBox{
+    /* overflow-y: scroll; */
+    /* min-height: 232px; */    
+}
+
+aside>.playlistBox a{
+    display: block;
+    margin: 15px 18px;
+    text-decoration: none;
+    color: #696969;
+}
+
+aside>.playlistBox a:hover{
+    color: white;
+}
+
+aside>.foot{
+    width: 100%;
+    padding: 0 18px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+}
+
+aside>.foot .installer{
+    display: block;
+    text-decoration: none;
+    color: #696969;
+    height: 25px;
+    border-bottom: 1px solid #696969;
+}
+
+aside>.foot .installer>img{
+    height: 15px;
+    filter: brightness(60%);
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+aside>.foot .installer>span{
+    font-size: 10px;
+}
+
+aside>.foot .installer:hover img{
+    filter: brightness(100%);
+}
+
+aside>.foot .installer:hover span{
+    color: white;
+}
+
+aside>.foot .profile{
+    height: 35px;
+    color: white;
+    margin-top: 10px;
+}
+
+aside>.foot .profile>img{
+    height: 60%;
+    background-color: #696969;
+    border-radius: 50%;
+    padding: 0 2px;
+    vertical-align: middle;
+    margin-right: 5px;
 }
 
 main{
     background-color: #141922;
     height: calc(100vh - 70px);
     width: calc(100vw - 200px);
+    color: white;
 }
 
 footer{
     background-color: #282828;
     height: 70px;
     width: 100%;
+    color: white;
 }
