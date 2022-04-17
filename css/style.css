@@ -6,3 +6,25 @@
     box-sizing: border-box;
 }
 
+.container{
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+}
+
+aside{
+    background-color: black;
+    width: 200px;
+    height: calc(100vh - 70px);
+}
+
+main{
+    background-color: #141922;
+    height: calc(100vh - 70px);
+    width: calc(100vw - 200px);
+}
+
+footer{
+    background-color: #282828;
+    height: 70px;
+    width: 100%;
+}
