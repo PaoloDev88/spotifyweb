@@ -97,8 +97,8 @@ aside>.createPlaylist:hover div{
 }
 
 aside>.playlistBox{
-    /* overflow-y: scroll; */
-    /* min-height: 232px; */    
+    height: calc(100% - 300px);
+    overflow: auto;
 }
 
 aside>.playlistBox a{
