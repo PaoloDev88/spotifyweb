@@ -167,6 +167,42 @@ aside>.foot .profile>img{
 
 /* fine regole aside */
 
+/* regole aside .minimal */
+
+aside.minimal{
+    background-color: black;
+    width: 50px;
+    max-height: calc(100vh - 70px);
+    display: none;
+    text-align: center;
+}
+
+aside.minimal>img{
+    margin: 10px;
+}
+
+aside.minimal>a img{
+    margin: 0;
+}
+
+aside.minimal>a{
+    margin: 0;
+}
+
+aside.minimal>.foot{
+    padding: 0;
+}
+
+aside.minimal>.foot .installer{
+    border-bottom: none;
+}
+
+aside.minimal>.foot .profile>img{
+    margin-right: 0;
+}
+
+/* fine regole aside .minimal */
+
 /* regole main */
 
 main{
@@ -175,6 +211,7 @@ main{
     width: calc(100vw - 200px);
     color: white;
     padding-top: 70px;
+    padding-bottom: 30px;
     position: relative;
     overflow: auto;
 }
@@ -260,7 +297,7 @@ main>h2{
 
 main>.row article{
     width: 180px;
-    margin: 0 5px;
+    margin: 0 5px 10px;
     text-align: center;
 }
 
@@ -296,13 +333,6 @@ main>.row article>div i{
     display: none;
 }
 
-main>span{
-    color: #696969;
-    font-size: 12px;
-    font-weight: 600;
-    margin-left: 15px;
-}
-
 main>.row.popular article img{
     border-radius: 50%;
 }
@@ -319,7 +349,12 @@ main>.row article:hover{
     cursor: pointer;
 }
 
-
+main>span{
+    color: #696969;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 15px;
+}
 
 /* fine regole main */
 
@@ -348,5 +383,23 @@ footer{
 @media screen and (max-width: 730px) {    
     main>.row article{
         width: calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 500px) {    
+    aside{
+        display: none;
+    }
+
+    aside.minimal{
+        display: block;
+    }
+
+    main{
+        width: calc(100vw - 50px);
+    }
+
+    main>header{
+        width: calc(100vw - 50px);
     }
 }
