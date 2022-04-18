@@ -11,6 +11,8 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/* regole aside */
+
 aside{
     background-color: black;
     width: 200px;
@@ -163,16 +165,159 @@ aside>.foot .profile>img{
     margin-right: 5px;
 }
 
+/* fine regole aside */
+
+/* regole main */
+
 main{
     background-color: #141922;
     height: calc(100vh - 70px);
     width: calc(100vw - 200px);
     color: white;
+    padding-top: 70px;
+    position: relative;
+    overflow: auto;
 }
+
+main>header{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 70px;
+    width: calc(100vw - 200px);
+    text-align: right;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+main header>a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 600;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    display: inline-block;
+    padding: 0 40px;
+    border-radius: 22px;
+    margin-right: 15px;
+    font-size: 13px;
+    height: 44px;
+    line-height: 40px;
+}
+
+main header>a:hover{
+    transform: scale(1.1);
+}
+
+main>nav{
+    text-align: center;
+}
+
+main>nav li{
+    display: inline-block;
+}
+
+main>nav a{
+    text-decoration: none;
+    color: #696969;
+    font-size: 13px;
+    font-weight: 600;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin: 10px 10px;
+}
+
+main>nav .selected{
+    position: relative;
+}
+
+main>nav .selected div{
+    width: 40px;
+    border: 1px solid #adff2f;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+}
+
+main>nav a:hover{
+    color: white;
+}
+
+main>.row{
+    margin: 0 10px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main>h2{
+    margin-top: 40px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+main>.row article{
+    width: 180px;
+    margin: 0 5px;
+    text-align: center;
+}
+
+main>.row article>img{
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+main>.row article>h5{
+    margin-bottom: 5px;
+}
+
+main>.row article>span{
+    color: #696969;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+main>span{
+    color: #696969;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+main>.row.popular article>img{
+    border-radius: 50%;
+}
+
+
+
+/* fine regole main */
+
+/* regole footer */
 
 footer{
     background-color: #282828;
     height: 70px;
     width: 100%;
     color: white;
+}
+
+/* fine regole footer */
+
+@media screen and (max-width: 980px) {
+    main>.row{
+        flex-wrap: wrap;
+        justify-content: flex-start;        
+    }
+
+    main>.row article{
+        width: calc(25% - 10px);
+    }
+}
+
+@media screen and (max-width: 730px) {    
+    main>.row article{
+        width: calc(50% - 10px);
+    }
 }
