@@ -264,9 +264,8 @@ main>.row article{
     text-align: center;
 }
 
-main>.row article>img{
+main>.row article img{
     max-width: 100%;
-    margin-bottom: 10px;
 }
 
 main>.row article>h5{
@@ -279,6 +278,24 @@ main>.row article>span{
     font-weight: 600;
 }
 
+main>.row article>div{
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+main>.row article>div i{
+    font-size: 30px;
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 12px 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
 main>span{
     color: #696969;
     font-size: 12px;
@@ -286,8 +303,20 @@ main>span{
     margin-left: 15px;
 }
 
-main>.row.popular article>img{
+main>.row.popular article img{
     border-radius: 50%;
+}
+
+main>.row article:hover img{
+    filter: brightness(60%);
+}
+
+main>.row article:hover i{
+    display: block;
+}
+
+main>.row article:hover{
+    cursor: pointer;
 }
 
 
