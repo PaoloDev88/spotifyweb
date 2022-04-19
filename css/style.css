@@ -437,7 +437,7 @@ footer .cx>div i{
     margin: 0 10px;
 }
 
-footer .cx>div i:hover{
+footer i:hover{
     cursor: pointer;
 }
 
@@ -458,7 +458,7 @@ footer .cx>div span{
     font-weight: 600;
 }
 
-footer .cx>div .progressionBar{
+footer .progressionBar{
     margin: 0 30px;
     background-color: #5a5a5a;
     border-radius: 3px;
@@ -466,14 +466,14 @@ footer .cx>div .progressionBar{
     position: relative;
 }
 
-footer .cx>div .progressionBar>.progressionEffect{
+footer .progressionBar>.progressionEffect{
     margin: 0;
     border: 2px solid #c1c1c1;
     border-radius: 3px;
     width: 20%;
 }
 
-footer .cx>div .progressionBar>.hoverEffect{
+footer .progressionBar>.hoverEffect{
     border: 5px solid white;
     border-radius: 50%;
     position: absolute;
@@ -483,16 +483,35 @@ footer .cx>div .progressionBar>.hoverEffect{
     display: none;
 }
 
-footer .cx>div .progressionBar:hover{
+footer .progressionBar:hover{
     cursor: pointer;
 }
 
-footer .cx>div .progressionBar:hover .progressionEffect{
+footer .progressionBar:hover .progressionEffect{
     border: 2px solid #adff2f;
 }
 
-footer .cx>div .progressionBar:hover .hoverEffect{
+footer .progressionBar:hover .hoverEffect{
     display: inline-block;
+}
+
+footer>.dx{
+    display: flex;
+    align-items: center;
+}
+
+footer>.dx i{
+    font-size: 12px;
+    margin: 0 8px;
+}
+
+footer .dx>div{
+    width: 100%;
+}
+
+footer .dx .progressionBar{
+    margin: 0 10px;
+
 }
 
 
