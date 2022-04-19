@@ -6,9 +6,12 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
 .container{
     display: flex;
-    font-family: 'Montserrat', sans-serif;
 }
 
 /* regole aside */
@@ -16,7 +19,7 @@
 aside{
     background-color: black;
     width: 200px;
-    max-height: calc(100vh - 70px);
+    max-height: calc(100vh - 80px);
     color: #696969;
     font-size: 13px;
     font-weight: 700;
@@ -172,7 +175,7 @@ aside>.foot .profile>img{
 aside.minimal{
     background-color: black;
     width: 50px;
-    max-height: calc(100vh - 70px);
+    max-height: calc(100vh - 80px);
     display: none;
     text-align: center;
 }
@@ -207,7 +210,7 @@ aside.minimal>.foot .profile>img{
 
 main{
     background-color: #141922;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 80px);
     width: calc(100vw - 200px);
     color: white;
     padding-top: 70px;
@@ -362,10 +365,66 @@ main>span{
 
 footer{
     background-color: #282828;
-    height: 70px;
+    height: 80px;
     width: 100%;
     color: white;
+    display: flex;
+    justify-content: space-between;
 }
+
+footer>.sx, footer>.dx{
+    width: 200px;
+}
+
+footer>.sx{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .sx>div{    
+    display: flex;
+    align-items: center;
+}
+
+footer .sx>div img{
+    max-width: 40px;
+    margin: 0 10px;
+}
+
+footer .sx>div div{
+    display: inline-block;
+}
+
+footer .sx>div span{
+    color: #848484;
+    font-size: 10px;
+    font-weight: 600;
+    vertical-align: top;
+}
+
+footer .sx>div span:hover{
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer .sx>div i{
+    color: #848484;
+    margin-right: 10px;
+}
+
+footer .sx>div i:hover{
+    color: white;
+    cursor: pointer;
+}
+
+footer>.cx{
+    width: 33%;
+}
+
+
+
+
 
 /* fine regole footer */
 
