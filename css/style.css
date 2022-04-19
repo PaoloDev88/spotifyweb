@@ -387,7 +387,7 @@ footer .sx>div{
 }
 
 footer .sx>div img{
-    max-width: 40px;
+    max-width: 30%;
     margin: 0 10px;
 }
 
@@ -498,11 +498,12 @@ footer .progressionBar:hover .hoverEffect{
 footer>.dx{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 footer>.dx i{
     font-size: 12px;
-    margin: 0 8px;
+    margin-right: 15px;
 }
 
 footer .dx>div{
@@ -510,13 +511,9 @@ footer .dx>div{
 }
 
 footer .dx .progressionBar{
-    margin: 0 10px;
-
+    margin-right: 15px;
+    margin-left: 0;
 }
-
-
-
-
 
 /* fine regole footer */
 
