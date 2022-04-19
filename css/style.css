@@ -534,7 +534,7 @@ footer .dx .progressionBar{
     }
 }
 
-@media screen and (max-width: 500px) {    
+@media screen and (max-width: 630px) {    
     aside{
         display: none;
     }
@@ -549,5 +549,26 @@ footer .dx .progressionBar{
 
     main>header{
         width: calc(100vw - 50px);
+    }
+
+    footer .sx>div.icons{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer .sx>div.icons i{
+        margin: 5px 20px;
+    }
+
+    footer>.sx, footer>.dx{
+        width: calc(50% - 96px);
+    }
+
+    footer>.cx{
+        width: 192px;
+    }
+
+    footer>.dx{
+        margin-left: 20px;
     }
 }
