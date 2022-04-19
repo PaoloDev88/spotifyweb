@@ -582,11 +582,11 @@ footer .dx .progressionBar{
 }
 
 @media screen and (max-height: 500px){
-    aside>.foot{
+    aside.normal>.foot{
         display: none;
     }
 
-    aside{
+    aside.normal{
         padding-bottom: 0;
     }
 }
