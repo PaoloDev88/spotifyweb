@@ -352,6 +352,10 @@ main>.row article:hover{
     cursor: pointer;
 }
 
+main>.row article.empty:hover{
+    cursor: default;
+}
+
 main>span{
     color: #696969;
     font-size: 12px;
@@ -534,7 +538,7 @@ footer .dx .progressionBar{
     }
 }
 
-@media screen and (max-width: 630px) {    
+@media screen and (max-width: 630px) {
     aside{
         display: none;
     }
@@ -557,7 +561,7 @@ footer .dx .progressionBar{
     }
 
     footer .sx>div.icons i{
-        margin: 5px 20px;
+        margin: 2px 30px;
     }
 
     footer>.sx, footer>.dx{
@@ -570,5 +574,9 @@ footer .dx .progressionBar{
 
     footer>.dx{
         margin-left: 20px;
+    }
+
+    footer>.dx i{
+        margin-right: 10px;
     }
 }
