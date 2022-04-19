@@ -581,6 +581,16 @@ footer .dx .progressionBar{
     }
 }
 
+@media screen and (max-width: 500px){
+    footer .sx>div img{
+        display: none;
+    }
+    
+    footer .sx>div div{
+        margin-left: 15px;
+    }
+}
+
 @media screen and (max-height: 500px){
     aside.normal>.foot{
         display: none;
