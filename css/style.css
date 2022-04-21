@@ -223,12 +223,12 @@ main>header{
     background-color: rgba(0, 0, 0, 0.5);
     height: 70px;
     width: calc(100vw - 200px);
-    text-align: right;
     position: fixed;
     top: 0;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    z-index: 999;
 }
 
 main header>a{
@@ -254,7 +254,7 @@ main>nav{
 }
 
 main>nav li{
-    display: inline-block;
+    display: inline-block;/* meglio usare float left */
 }
 
 main>nav a{
